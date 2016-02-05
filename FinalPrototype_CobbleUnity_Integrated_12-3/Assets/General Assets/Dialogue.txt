@@ -1,0 +1,18 @@
+Cobble, you're alive!  Can you hear me?
+I'm Alani, I'm the one who built you.
+Lets get you out of there.  There is a gate over there but the control panel on this side is broken.
+You'll have to open it from your side.
+Grab that battery and take it to the control panel to power it on.
+
+Test. Hey Cobble!  This is the test area.
+Try picking up that object.
+This is line number three!
+
+Skip a line test.
+Blah blah blah.
+
+This is the Fuel Depot!  Look out for the acid.  There's acid explosions and pools.
+Find the fuel processor and get us some fuel!
+
+This will be our home base where we build our rocket.  Bring all the parts you find back here.
+Go to the fuel depot first and get us some power!

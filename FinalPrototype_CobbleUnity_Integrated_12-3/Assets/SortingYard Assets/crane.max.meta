@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: f40909f60727e0b4e9931aabda502d6e
+timeCreated: 1446745052
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: counter ballast
+    100002: //RootNode
+    100004: crane rotatingpoint
+    100006: Dummy001
+    100008: hook
+    100010: tower mast
+    100012: trolley
+    100014: working jib
+    400000: counter ballast
+    400002: //RootNode
+    400004: crane rotatingpoint
+    400006: Dummy001
+    400008: hook
+    400010: tower mast
+    400012: trolley
+    400014: working jib
+    2300000: counter ballast
+    2300002: //RootNode
+    2300004: crane rotatingpoint
+    2300006: hook
+    2300008: tower mast
+    2300010: trolley
+    2300012: working jib
+    3300000: counter ballast
+    3300002: //RootNode
+    3300004: crane rotatingpoint
+    3300006: hook
+    3300008: tower mast
+    3300010: trolley
+    3300012: working jib
+    4300000: Box001
+    4300002: crane rotatingpoint
+    4300004: working jib
+    4300006: counter ballast
+    4300008: hook
+    4300010: trolley
+    4300012: tower mast
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
