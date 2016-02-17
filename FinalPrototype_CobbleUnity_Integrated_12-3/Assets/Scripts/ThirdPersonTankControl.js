@@ -16,7 +16,10 @@ public var rotationSpeed: float;
 public var grabObjectKey: KeyCode;
 public var jumpKey: KeyCode;
 public var maxClimbAngle: float;
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 
 //public var maxJumpTime: float = 1.5; 
 public var thrust: float = 1000;
@@ -57,6 +60,7 @@ function FixedUpdate() {
 	//rotateObject = Mathf.Clamp(Input.GetAxis("Horizontal"),-1.0,1.0);
 	rotateObject = Input.GetAxis("Horizontal");
 	
+<<<<<<< HEAD
 	//Put an angle limit on character
 	climbPercent = myTransform.localEulerAngles.x;
 	if(forwardMovement > 0)
@@ -90,6 +94,43 @@ function FixedUpdate() {
 				}
 		}
 	//Move GameObject
+=======
+    //Implement Angle restriction
+	climbPercent = myTransform.localEulerAngles.x;
+	if(forwardMovement > 0)
+	{
+	    if((climbPercent <= 360) && (climbPercent >= (360-maxClimbAngle)))
+	    {
+	        climbPercent = 1 - ((360-climbPercent)/maxClimbAngle);
+	    }
+	    else if ((climbPercent < (360-maxClimbAngle)) && (climbPercent > maxClimbAngle))
+	    {
+	        climbPercent = 0;
+	    }
+	    else
+	    {
+	        climbPercent = 1;
+	    }
+	}
+	else if (forwardMovement < 0)
+	{
+	    if((climbPercent <= maxClimbAngle) && (climbPercent >= 0))
+	    {
+	        climbPercent = 1 - (climbPercent/maxClimbAngle);
+	    }
+	    else if ((climbPercent > (maxClimbAngle)) && (climbPercent < (360-maxClimbAngle)))
+	    {
+	        climbPercent = 0;
+	    }
+	    else
+	    {
+	        climbPercent = 1;
+	    }
+	}
+	Debug.Log("Rotation is: "+myTransform.localEulerAngles.x +" Climb percent is: "+climbPercent+" Forward Movement is: "+forwardMovement);
+
+    //Move GameObject
+>>>>>>> refs/remotes/origin/master
 	moveForward = forwardMovement * Vector3.forward * speed * Time.deltaTime * climbPercent /* speedMultiplier*/;
 	//currentRotation = ClampAngle(currentRotation + (rotateObject * rotationSpeed * Time.deltaTime));
 	//rotationAngle = Quaternion.Euler(0.0, currentRotation, 0.0);
