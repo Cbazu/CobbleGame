@@ -49,7 +49,7 @@ public class ControlTerminal : MonoBehaviour {
 	}
 
 	void Button1Function(){
-		controlObject.GetComponent<Gate> ().Activate ();
+		controlObject.GetComponent<GateAnim> ().Activate ();
 		modalPanel.ClosePanel ();
 	}
 
@@ -64,6 +64,7 @@ public class ControlTerminal : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player" && isPowered == true && isActive == false) {
 			Prompt ();
+			Debug.Log ("Detected");
 		}
 	}
 
