@@ -5,7 +5,8 @@ using System.Collections;
 public class TeleportGate : MonoBehaviour {
 
 	//public variables
-	public string destination;
+	public string destinationLevel;
+    public string destinationTarget;
 	public GameObject loadingUI;
 	public Text loadTextDisplay;
 	public Image loadBarImage;
@@ -44,13 +45,13 @@ public class TeleportGate : MonoBehaviour {
 			if (levelLoading != null) {
 			}
 			if ((testTime >= maxTestTime) && (levelLoading == null)) {
-				levelLoading = Application.LoadLevelAsync (destination);
+				levelLoading = Application.LoadLevelAsync (destinationLevel);
 			} else {
 				testTime += Time.deltaTime;
 			}
 
 			if ((testTime >= maxTestTime) && (testing)) {
-				levelLoading = Application.LoadLevelAsync (destination);
+				levelLoading = Application.LoadLevelAsync (destinationLevel);
 			} else if (testing) {
 				testTime += Time.deltaTime;
 			}
