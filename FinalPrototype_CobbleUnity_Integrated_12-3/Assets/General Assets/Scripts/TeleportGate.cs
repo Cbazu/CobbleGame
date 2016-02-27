@@ -27,6 +27,7 @@ public class TeleportGate : MonoBehaviour {
 	private float maxTestTime = 3.0f;
 	private bool testing = false;
 
+
 	// Use this for initialization
 	void Start () {
         //loadBarImage = loadingUI.GetComponentInChildren<Image>().GetComponentInChildren<Image>();
@@ -90,5 +91,11 @@ public class TeleportGate : MonoBehaviour {
 		testing = true;
 		Debug.Log ("Load Next Level called.");
 		loadingUI.SetActive(true);
+	}
+
+	void OnGUI() {
+		if (isDisplaying == true){
+			GUI.Label (new Rect (Screen.width / 2, Screen.height / 2, 100, 50), "Press T to travel to " + destinationLevel);
+		}
 	}
 }

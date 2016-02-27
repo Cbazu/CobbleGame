@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 295e60d25a2f1a849b934320b94131bb
+timeCreated: 1456590953
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: Door001
+    100006: HouseWalls001
+    100008: Post001
+    100010: Roof001
+    100012: SheetMetal01
+    100014: SheetMetal02
+    100016: SheetMetal03
+    100018: Tarp001
+    100020: Window001
+    100022: WoodPlank001
+    100024: WoodPlank002
+    100026: WoodPlank004
+    400000: //RootNode
+    400002: Box001
+    400004: Door001
+    400006: HouseWalls001
+    400008: Post001
+    400010: Roof001
+    400012: SheetMetal01
+    400014: SheetMetal02
+    400016: SheetMetal03
+    400018: Tarp001
+    400020: Window001
+    400022: WoodPlank001
+    400024: WoodPlank002
+    400026: WoodPlank004
+    2300000: Box001
+    2300002: Door001
+    2300004: HouseWalls001
+    2300006: Post001
+    2300008: Roof001
+    2300010: SheetMetal01
+    2300012: SheetMetal02
+    2300014: SheetMetal03
+    2300016: Tarp001
+    2300018: Window001
+    2300020: WoodPlank001
+    2300022: WoodPlank002
+    2300024: WoodPlank004
+    3300000: Box001
+    3300002: Door001
+    3300004: HouseWalls001
+    3300006: Post001
+    3300008: Roof001
+    3300010: SheetMetal01
+    3300012: SheetMetal02
+    3300014: SheetMetal03
+    3300016: Tarp001
+    3300018: Window001
+    3300020: WoodPlank001
+    3300022: WoodPlank002
+    3300024: WoodPlank004
+    4300000: HouseWalls001
+    4300002: WoodPlank004
+    4300004: Tarp001
+    4300006: Post001
+    4300008: WoodPlank001
+    4300010: WoodPlank002
+    4300012: Window001
+    4300014: Door001
+    4300016: Box001
+    4300018: Roof001
+    4300020: SheetMetal02
+    4300022: SheetMetal01
+    4300024: SheetMetal03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

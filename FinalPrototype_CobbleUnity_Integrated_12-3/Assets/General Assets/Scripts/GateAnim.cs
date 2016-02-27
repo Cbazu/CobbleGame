@@ -4,7 +4,7 @@ using System.Collections;
 public class GateAnim : MonoBehaviour {
 
 	public Animator animator;
-	bool isOpen = false;
+	public bool isOpen = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,8 @@ public class GateAnim : MonoBehaviour {
 	
 		if (isOpen == true) {
 			animator.SetBool ("isOpen", true);
-		} else {
+		} 
+		if(isOpen == false){
 			animator.SetBool ("isOpen", false);
 		}
 

@@ -16,3 +16,8 @@ Find the fuel processor and get us some fuel!
 
 This will be our home base where we build our rocket.  Bring all the parts you find back here.
 Go to the fuel depot first and get us some power!
+
+Hey, looks like this gate is controlled by that pressure plate.
+To keep it open you'll have to find something heavy to push onto it.
+
+Great Job!  Come meet me at my base.  Go through the big gate up ahead.
