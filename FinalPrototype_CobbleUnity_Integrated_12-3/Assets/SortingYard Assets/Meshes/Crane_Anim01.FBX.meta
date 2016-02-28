@@ -37,7 +37,13 @@ ModelImporter:
     4300006: MidBlock
     4300008: ExtArm
     4300010: MagPlate
-    7400000: Take 001
+    7400000: Crane Pose
+    7400002: Crane Short Down
+    7400004: Crane Short Up
+    7400006: Crane Short Set Down
+    7400008: Crane Long Down
+    7400010: Crane Long Up
+    7400012: Crane Long Set Down
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -60,9 +66,249 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Crane Pose
       takeName: Take 001
-      firstFrame: 1
+      firstFrame: 2
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Short Down
+      takeName: Take 001
+      firstFrame: 3
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Short Up
+      takeName: Take 001
+      firstFrame: 69
+      lastFrame: 123
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Short Set Down
+      takeName: Take 001
+      firstFrame: 124
+      lastFrame: 183
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Long Down
+      takeName: Take 001
+      firstFrame: 184
+      lastFrame: 243
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Long Up
+      takeName: Take 001
+      firstFrame: 244
+      lastFrame: 303
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Long Set Down
+      takeName: Take 001
+      firstFrame: 304
       lastFrame: 363
       wrapMode: 0
       orientationOffsetY: 0
@@ -102,7 +348,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

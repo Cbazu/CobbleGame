@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/sorting yard.unity
   - enabled: 1
     path: Assets/Scenes/The Furnace.unity
+  - enabled: 1
+    path: Assets/Scenes/AlaniHubTest.unity
