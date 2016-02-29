@@ -44,6 +44,7 @@ ModelImporter:
     7400008: Crane Long Down
     7400010: Crane Long Up
     7400012: Crane Long Set Down
+    7400014: Crane Short Up Rotate
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -69,14 +70,14 @@ ModelImporter:
       name: Crane Pose
       takeName: Take 001
       firstFrame: 2
-      lastFrame: 2
+      lastFrame: 3
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       loopTime: 0
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -310,6 +311,46 @@ ModelImporter:
       takeName: Take 001
       firstFrame: 304
       lastFrame: 363
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CementBase
+        weight: 1
+      - path: CraneBase
+        weight: 1
+      - path: CraneBase/LowerArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm
+        weight: 1
+      - path: CraneBase/LowerArm/MidBlock/ExtArm/MagPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Crane Short Up Rotate
+      takeName: Take 001
+      firstFrame: 123
+      lastFrame: 124
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
