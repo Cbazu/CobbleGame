@@ -1959,7 +1959,7 @@ GameObject:
   - 54: {fileID: 307157108}
   m_Layer: 0
   m_Name: Crate01
-  m_TagString: IntObject
+  m_TagString: Pushable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15567,7 +15567,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896457321}
-  m_LocalRotation: {x: -.655540228, y: .255645663, z: .258170992, w: .6620121}
+  m_LocalRotation: {x: -.655540287, y: .255645692, z: .258171022, w: .66201216}
   m_LocalPosition: {x: 111.900002, y: -23.6000004, z: 103.5}
   m_LocalScale: {x: 3.86322212, y: 5.27828312, z: 5.61592484}
   m_Children: []

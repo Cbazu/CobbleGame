@@ -44,7 +44,7 @@ public class PlateAnimate : MonoBehaviour {
 
 	void OnTriggerStay(Collider other){
 		animator.SetBool ("isDown", true);
-		if (other.tag == "IntObject") {
+		if (other.tag == "IntObject" || other.tag == "Pushable") {
 			controlObject.GetComponent<Animator> ().SetBool ("isOpen", true);
 			plateDown = true;
 		}

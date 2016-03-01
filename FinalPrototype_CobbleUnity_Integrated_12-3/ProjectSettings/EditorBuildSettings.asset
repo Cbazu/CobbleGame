@@ -8,14 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuTest.unity
   - enabled: 1
-    path: Assets/Scenes/Tutorial 1.unity
+    path: Assets/Scenes/TutorialTest.unity
   - enabled: 1
     path: Assets/Scenes/FuelDepot.unity
   - enabled: 1
     path: Assets/Scenes/AlaniHub.unity
   - enabled: 1
-    path: Assets/Scenes/sorting yard.unity
+    path: Assets/Scenes/sorting yardTest.unity
   - enabled: 1
     path: Assets/Scenes/The Furnace.unity
   - enabled: 1
     path: Assets/Scenes/AlaniHubTest.unity
+  - enabled: 0
+    path: Assets/Scenes/Tutorial 1.unity
+  - enabled: 0
+    path: Assets/Scenes/sorting yard.unity

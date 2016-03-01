@@ -13,6 +13,8 @@ public class CraneControl1 : MonoBehaviour {
 	GameObject magObject;
 	private float startTime;
 
+	public float initRotation;
+
 	int runStateHash = Animator.StringToHash ("Short Up");
 
 	// Use this for initialization
@@ -20,6 +22,14 @@ public class CraneControl1 : MonoBehaviour {
 
 		//anim = GetComponentInChildren<Animator> ();
 		anim.SetBool ("isReverse", false);
+
+		initRotation = transform.eulerAngles.y;
+
+		rotationAngle += initRotation;
+		if (rotationAngle > 360f) {
+			rotationAngle -= 360f;
+		}
+
 
 	}
 	
