@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tutorial 1.unity
+- path: Assets/Scenes/sorting yardTest.unity
   isLoaded: 1
   isActive: 1
