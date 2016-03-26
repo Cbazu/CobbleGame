@@ -28,11 +28,13 @@ public class CutLaser : MonoBehaviour {
 			CuttingLaserEnd.transform.position = objectToCut.transform.position;
 			CuttingLaserEnd.transform.LookAt (CuttingLaserStart.transform);
 			countDown -= 0.1f;
+			objectToCut.GetComponent<Animator> ().SetBool ("isCutting", true);
 			if (countDown <= 0) {
 				Gate.GetComponent<Animator> ().SetBool ("isOpen", true);
 			}
 		} else {
 			CuttingLaser.SetActive (false);
+			objectToCut.GetComponent<Animator> ().SetBool ("isCutting", false);
 			countDown = cutTime;
 		}
 
