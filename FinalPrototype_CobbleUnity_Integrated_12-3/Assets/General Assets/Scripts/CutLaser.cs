@@ -8,7 +8,10 @@ public class CutLaser : MonoBehaviour {
 	public GameObject CuttingLaserStart;
 	public GameObject CuttingLaserEnd;
 	public Canvas promptUI;
+	public GameObject Gate;
+	public float cutTime = 10f;
 	private bool inRange = false;
+	private float countDown = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -24,8 +27,13 @@ public class CutLaser : MonoBehaviour {
 			CuttingLaser.SetActive (true);
 			CuttingLaserEnd.transform.position = objectToCut.transform.position;
 			CuttingLaserEnd.transform.LookAt (CuttingLaserStart.transform);
+			countDown -= 0.1f;
+			if (countDown <= 0) {
+				Gate.GetComponent<Animator> ().SetBool ("isOpen", true);
+			}
 		} else {
 			CuttingLaser.SetActive (false);
+			countDown = cutTime;
 		}
 
 	}
