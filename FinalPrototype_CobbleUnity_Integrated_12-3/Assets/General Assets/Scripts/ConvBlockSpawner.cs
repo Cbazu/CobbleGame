@@ -4,7 +4,7 @@ using System.Collections;
 public class ConvBlockSpawner : MonoBehaviour {
 
 	public GameObject convPrefab;
-	public float spawnRate = 2.5f;
+	public float spawnRate = 0.5f;
 
 	// Use this for initialization
 	void Start () {

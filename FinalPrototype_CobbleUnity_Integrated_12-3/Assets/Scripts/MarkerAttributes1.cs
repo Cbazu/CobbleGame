@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MarkerAttributes : MonoBehaviour {
+public class MarkerAttributes1 : MonoBehaviour {
 
     public string markerName;
 

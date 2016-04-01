@@ -15,4 +15,8 @@ public class WaypointInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	}
+
+	public float GetWaitTime(){
+		return waitTime;
+	}
 }
