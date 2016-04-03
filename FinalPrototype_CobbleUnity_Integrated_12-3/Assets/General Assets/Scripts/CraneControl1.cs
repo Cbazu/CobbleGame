@@ -101,7 +101,7 @@ public class CraneControl1 : MonoBehaviour {
 	}
 
 	IEnumerator Wait(){
-		Debug.Log ("Waiting");
+		//Debug.Log ("Waiting");
 		yield return new WaitForSeconds (1.5f);
 		letGo = true;
 	}

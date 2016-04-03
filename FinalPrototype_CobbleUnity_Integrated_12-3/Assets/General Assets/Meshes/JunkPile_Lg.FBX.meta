@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: eb5bfddd73601a747b3dfda184e3f982
+timeCreated: 1459541081
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bar Twisted 005
+    100002: Bar Twisted 006
+    100004: Bar Twisted 007
+    100006: Box Design 003
+    100008: Box Design 004
+    100010: Box Design 005
+    100012: Box Design 02a
+    100014: Box Design 02a001
+    100016: Box Design 02a002
+    100018: Box Design 02a003
+    100020: Box Design Fan 01a
+    100022: //RootNode
+    100024: Sheet Metal 002
+    100026: Sheet Metal 003
+    100028: Sheet Metal 004
+    100030: Tire 002
+    100032: Tire 003
+    100034: Tire 004
+    100036: Tube 002
+    100038: Tube 003
+    100040: Tube 004
+    100042: Tube 005
+    100044: Tube 008
+    100046: Tube 02 Curved001
+    100048: Tube 02 Curved002
+    100050: Tube 02 Curved003
+    100052: Wood Piece 002
+    100054: Wood Piece 004
+    400000: Bar Twisted 005
+    400002: Bar Twisted 006
+    400004: Bar Twisted 007
+    400006: Box Design 003
+    400008: Box Design 004
+    400010: Box Design 005
+    400012: Box Design 02a
+    400014: Box Design 02a001
+    400016: Box Design 02a002
+    400018: Box Design 02a003
+    400020: Box Design Fan 01a
+    400022: //RootNode
+    400024: Sheet Metal 002
+    400026: Sheet Metal 003
+    400028: Sheet Metal 004
+    400030: Tire 002
+    400032: Tire 003
+    400034: Tire 004
+    400036: Tube 002
+    400038: Tube 003
+    400040: Tube 004
+    400042: Tube 005
+    400044: Tube 008
+    400046: Tube 02 Curved001
+    400048: Tube 02 Curved002
+    400050: Tube 02 Curved003
+    400052: Wood Piece 002
+    400054: Wood Piece 004
+    2300000: Bar Twisted 005
+    2300002: Bar Twisted 006
+    2300004: Bar Twisted 007
+    2300006: Box Design 003
+    2300008: Box Design 004
+    2300010: Box Design 005
+    2300012: Box Design 02a
+    2300014: Box Design 02a001
+    2300016: Box Design 02a002
+    2300018: Box Design 02a003
+    2300020: Box Design Fan 01a
+    2300022: //RootNode
+    2300024: Sheet Metal 002
+    2300026: Sheet Metal 003
+    2300028: Sheet Metal 004
+    2300030: Tire 002
+    2300032: Tire 003
+    2300034: Tire 004
+    2300036: Tube 002
+    2300038: Tube 003
+    2300040: Tube 004
+    2300042: Tube 005
+    2300044: Tube 008
+    2300046: Tube 02 Curved001
+    2300048: Tube 02 Curved002
+    2300050: Tube 02 Curved003
+    2300052: Wood Piece 002
+    2300054: Wood Piece 004
+    3300000: Bar Twisted 005
+    3300002: Bar Twisted 006
+    3300004: Bar Twisted 007
+    3300006: Box Design 003
+    3300008: Box Design 004
+    3300010: Box Design 005
+    3300012: Box Design 02a
+    3300014: Box Design 02a001
+    3300016: Box Design 02a002
+    3300018: Box Design 02a003
+    3300020: Box Design Fan 01a
+    3300022: //RootNode
+    3300024: Sheet Metal 002
+    3300026: Sheet Metal 003
+    3300028: Sheet Metal 004
+    3300030: Tire 002
+    3300032: Tire 003
+    3300034: Tire 004
+    3300036: Tube 002
+    3300038: Tube 003
+    3300040: Tube 004
+    3300042: Tube 005
+    3300044: Tube 008
+    3300046: Tube 02 Curved001
+    3300048: Tube 02 Curved002
+    3300050: Tube 02 Curved003
+    3300052: Wood Piece 002
+    3300054: Wood Piece 004
+    4300000: Junk Pile Large
+    4300002: Box Design Fan 01a
+    4300004: Box Design 02a
+    4300006: Box Design 003
+    4300008: Tube 002
+    4300010: Bar Twisted 005
+    4300012: Tire 002
+    4300014: Tire 003
+    4300016: Tube 003
+    4300018: Wood Piece 002
+    4300020: Box Design 004
+    4300022: Box Design 02a001
+    4300024: Bar Twisted 006
+    4300026: Tube 004
+    4300028: Tube 005
+    4300030: Box Design 005
+    4300032: Box Design 02a002
+    4300034: Tire 004
+    4300036: Box Design 02a003
+    4300038: Wood Piece 004
+    4300040: Bar Twisted 007
+    4300042: Tube 02 Curved001
+    4300044: Tube 02 Curved002
+    4300046: Tube 02 Curved003
+    4300048: Sheet Metal 002
+    4300050: Sheet Metal 003
+    4300052: Sheet Metal 004
+    4300054: Tube 008
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

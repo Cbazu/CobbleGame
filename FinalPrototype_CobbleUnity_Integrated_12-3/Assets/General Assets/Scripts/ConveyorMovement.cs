@@ -25,6 +25,10 @@ public class ConveyorMovement : MonoBehaviour {
 			waypoint = GameObject.FindGameObjectsWithTag ("WaypointSetA").OrderBy (go => go.name).ToArray ();
 		} else if (waypointSet == "B") {
 			waypoint = GameObject.FindGameObjectsWithTag ("WaypointSetB").OrderBy (go => go.name).ToArray ();
+		}else if (waypointSet == "C") {
+			waypoint = GameObject.FindGameObjectsWithTag ("WaypointSetC").OrderBy (go => go.name).ToArray ();
+		}else if (waypointSet == "D") {
+			waypoint = GameObject.FindGameObjectsWithTag ("WaypointSetD").OrderBy (go => go.name).ToArray ();
 		}
 	}
 	
