@@ -9,10 +9,13 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour {
 
     //public variables
+    public Transform enemyVision;
     public float patrolSpeed = 2f;
     public float chaseSpeed = 5f;
     public bool patrolIsLoop = false;
     public GameObject[] patrolWayPoints;
+    public GameObject player;
+    public float visibleDistance = 10.0f;
 
     //private variables
     private NavMeshAgent agent;
@@ -22,55 +25,66 @@ public class EnemyAI : MonoBehaviour {
     private float timeWaited = 0.0f;
     private bool isWaiting = false;
     private bool isTurning = false;
-    private float strength;
-    private Quaternion heading;
+    private float turnTime;
+    private Transform heading;
+    private GameObject chaseTarget;
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
+
+        //variables
+        Transform enemyVisionCheck;
+        GameObject newObject;
+
+        //Check for enemyVision prefab and if there isn't one create it
+        enemyVisionCheck = transform.Find(enemyVision.name);
+        if (enemyVisionCheck != null)
+        {
+            Debug.Log("Found EnemyVision!");
+            Debug.Log("Name that was searched: " + enemyVisionCheck.name);
+        }
+        else
+        {
+            enemyVisionCheck = (Transform) Instantiate(enemyVision, transform.position, Quaternion.identity);
+            enemyVisionCheck.transform.parent = transform;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 
         agent = GetComponent<NavMeshAgent>();
         agent.speed = patrolSpeed;
         currentPoint = 0;
-        if (patrolWayPoints.Length != 0) { transform.position = patrolWayPoints[currentPoint].transform.position; }
-        AssignNextPoint();
+        if (patrolWayPoints.Length != 0) { GotoNextPoint(); }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+        if(chaseTarget != null)
+        {
+            GotoNextPoint(chaseTarget.transform);
+        }
         //waits before moving on to the next point
-        if (isWaiting)
+        else if (isWaiting)
         {
             if (timeWaited >= timeToWait)
             {
                 isWaiting = false;
-                isTurning = true;
-                //heading = Quaternion.LookRotation(patrolWayPoints[currentPoint].transform.position - transform.position);
+                timeWaited = 0f;
+                GotoNextPoint();
             }
             else
             {
                 timeWaited += Time.deltaTime;
             }
         }
-        //Choose next destination point when target gets close to current one
-        else if (agent.remainingDistance < 0.05f && !isTurning)
+
+        //Choose next destination point when target gets close to current one once subject is finished turning
+        else if (agent.remainingDistance < 0.05f /*&& !isTurning*/)
         {
             AssignNextPoint();
-        }
-
-        //turns player before proceeding on to next waypoint
-        if (isTurning)
-        {
-            heading = Quaternion.LookRotation(patrolWayPoints[currentPoint].transform.position - transform.position);
-            strength = Mathf.Min(agent.angularSpeed * Time.deltaTime, 1);
-            transform.rotation = Quaternion.Lerp(transform.rotation, heading, strength);
-            if (timeWaited > (timeToWait + 1.5f))
-            {
-                timeWaited = 0.0f;
-                GotoNextPoint();
-                isTurning = false;
-            }
-            timeWaited += Time.deltaTime;
         }
     }
 
@@ -82,17 +96,16 @@ public class EnemyAI : MonoBehaviour {
         if (patrolWayPoints.Length == 0) { return; }
 
         //Wait until it's time to move to the next point
-        //agent.destination = patrolWayPoints[currentPoint].transform.position;
         timeToWait = patrolWayPoints[currentPoint].GetComponent<WaypointInfo>().GetWaitTime();
         isWaiting = timeToWait != 0;
         Debug.Log("wait time is: " + timeToWait);
-
+        Debug.Log("Current waypoint is " + currentPoint);
         //Choose the next point when agent gets close to current one
         if (patrolIsLoop)
         {
-            currentPoint = (currentPoint + 1) % patrolWayPoints.Length;
+            currentPoint = (currentPoint + 1) % patrolWayPoints.Length; //loops through all the waypoints continuously
         }
-        else
+        else //Performs a down and back route in order of the array
         {
             if (currentPoint == patrolWayPoints.Length - 1)
             {
@@ -107,12 +120,38 @@ public class EnemyAI : MonoBehaviour {
         }
     }
 
+    void AssignNextPoint(Transform chasePlayer)
+    {
+        //Overloaded function used to chase the player or set a point manually.
+        agent.destination = chasePlayer.position;
+        agent.speed = chaseSpeed;
+    }
+
     //Moves agent to the next point
     void GotoNextPoint()
     {
-
         //Move to next point
         agent.destination = patrolWayPoints[currentPoint].transform.position;
     }
 
+    void GotoNextPoint(Transform chasePos)
+    {
+        agent.destination = chasePos.position;
+    }
+
+    public void ChaseTarget(GameObject target)
+    {
+
+        //set the chase target and speed
+        chaseTarget = target;
+        agent.speed = chaseSpeed;
+    }
+
+    public void ContinuePatrol()
+    {
+        agent.destination = patrolWayPoints[currentPoint].transform.position;
+        agent.speed = patrolSpeed;
+        chaseTarget = null; //removes target for effect loop selection
+        //Debug.Log("Chase target is: "+chaseTarget.ToString());
+    }
 }
