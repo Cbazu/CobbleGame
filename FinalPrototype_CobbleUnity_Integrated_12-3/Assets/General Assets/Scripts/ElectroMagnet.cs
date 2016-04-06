@@ -44,7 +44,7 @@ public class ElectroMagnet : MonoBehaviour {
 	}
 
 	void ThrowPlayer(){
-		player.GetComponent<Rigidbody> ().AddForce ((target.position - transform.position) * 3000f);
+		player.GetComponent<Rigidbody> ().AddForce ((target.position - transform.position) * 2000f);
 		letGo = false;
 	}
 
