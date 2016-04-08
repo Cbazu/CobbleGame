@@ -2,9 +2,11 @@
 using System.Collections;
 
 
-/******************************************************************************
-*   Script modified from: http://docs.unity3d.com/Manual/nav-AgentPatrol.html *
-******************************************************************************/
+/**************************************************************************************
+*   Script heavily modified from: http://docs.unity3d.com/Manual/nav-AgentPatrol.html *
+**************************************************************************************/
+
+[RequireComponent (typeof(NavMeshAgent))]
 
 public class EnemyAI : MonoBehaviour {
 

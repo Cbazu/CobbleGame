@@ -61,7 +61,7 @@ public class CraneControl1 : MonoBehaviour {
 //				if(transform.eulerAngles.y > 350f && rev == true){
 //					anim.SetTrigger ("forw");
 //				}
-				//Debug.Log ("reverse");
+				Debug.Log ("reverse");
 			}
 
 		}
@@ -76,7 +76,7 @@ public class CraneControl1 : MonoBehaviour {
 			rev = false;
 
 		}
-		//Debug.Log (stateInfo);
+		Debug.Log (stateInfo);
 		//------------------------------------------------------------------
 
 		if (pickUp == true) {
@@ -91,7 +91,7 @@ public class CraneControl1 : MonoBehaviour {
 	}
 
 	public void TriggerEntered(GameObject magnetCol, GameObject otherCol){
-		if (otherCol.tag == "Player" || otherCol.tag == "Magnetic") {
+		if (otherCol.tag == "Player" || otherCol.tag == "magnetic") {
 			pickUp = true;
 			letGo = false;
 			magObject = otherCol.gameObject;

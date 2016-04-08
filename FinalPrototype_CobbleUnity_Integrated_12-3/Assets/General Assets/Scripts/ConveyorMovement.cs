@@ -70,7 +70,7 @@ public class ConveyorMovement : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 
-		if (other.tag == "Player" || other.tag == "Pushable" || other.tag == "Magnetic") {
+		if (other.tag == "Player" || other.tag == "Pushable") {
 			other.transform.parent = gameObject.transform;
 		}
 		if (other.tag == "Cleaner") {

@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
 	{
 		get
 		{
-			if(notifications == null) notifications =  instance.GetComponent<NotificationsManager>();
 			return notifications;
 		}
 	}

@@ -103,8 +103,7 @@ public class EnemyVision : MonoBehaviour {
             if (hit.collider.gameObject.CompareTag("Player"))
             {
                 gameObject.GetComponentInParent<EnemyAI>().ChaseTarget(hit.collider.gameObject);    //set the chase target and begin chasing
-				Debug.Log("Raycast Hit: " + hit.collider.gameObject.tag);
-			}
+            }
         }
     }
 }
