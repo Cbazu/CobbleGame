@@ -129,7 +129,7 @@ function FixedUpdate() {
 	        climbPercent = 1;
 	    }
 	}
-	Debug.Log("Rotation is: "+myTransform.localEulerAngles.x +" Climb percent is: "+climbPercent+" Forward Movement is: "+forwardMovement);
+//	Debug.Log("Rotation is: "+myTransform.localEulerAngles.x +" Climb percent is: "+climbPercent+" Forward Movement is: "+forwardMovement);
 
     //Move GameObject
 //>>>>>>> refs/remotes/origin/master

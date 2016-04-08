@@ -11,6 +11,7 @@ TagManager:
   - Conveyor
   - Cleaner
   - WaypointSetC
+  - Magnetic
   layers:
   - Default
   - TransparentFX
