@@ -38,8 +38,6 @@ private var distToGround: float;
 private var speedMultiplier: float = 10000;
 private var lastGroundState: boolean;
 private var climbPercent: float;
-private var targetDestination : String;
-private var targetOffset : float;
 //private var jumpTime: float = 0.0;
 //private var groundedChange: boolean = true;
 
@@ -131,7 +129,7 @@ function FixedUpdate() {
 	        climbPercent = 1;
 	    }
 	}
-	//Debug.Log("Rotation is: "+myTransform.localEulerAngles.x +" Climb percent is: "+climbPercent+" Forward Movement is: "+forwardMovement);
+//	Debug.Log("Rotation is: "+myTransform.localEulerAngles.x +" Climb percent is: "+climbPercent+" Forward Movement is: "+forwardMovement);
 
     //Move GameObject
 //>>>>>>> refs/remotes/origin/master
