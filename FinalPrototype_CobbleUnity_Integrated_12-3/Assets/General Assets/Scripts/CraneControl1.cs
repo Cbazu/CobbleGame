@@ -61,7 +61,7 @@ public class CraneControl1 : MonoBehaviour {
 //				if(transform.eulerAngles.y > 350f && rev == true){
 //					anim.SetTrigger ("forw");
 //				}
-				Debug.Log ("reverse");
+				//Debug.Log ("reverse");
 			}
 
 		}

@@ -12,6 +12,7 @@ TagManager:
   - Cleaner
   - WaypointSetC
   - Magnetic
+  - Enemy
   layers:
   - Default
   - TransparentFX

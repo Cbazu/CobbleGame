@@ -20,15 +20,18 @@ public class Crusher : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-	if (other.tag == "Player") {
-		source.PlayOneShot (Crunch, 1f);
-		GameManager.Notifications.PostNotification (this, "Die");
-	} else if (other.tag == "Magnetic") {
-		source.PlayOneShot (Explosion, 1f);
-		//exploder = other.GetComponent<GameObject> ();
-		Destroy(other.gameObject);
-		Explode ();
-	}
+		if (other.tag == "Player") {
+			source.PlayOneShot (Crunch, 1f);
+			GameManager.Notifications.PostNotification (this, "Die");
+		} else if (other.tag == "Magnetic") {
+			source.PlayOneShot (Explosion, 1f);
+			//exploder = other.GetComponent<GameObject> ();
+			Destroy (other.gameObject);
+			Explode ();
+		} else if (other.tag == "Enemy") {
+			source.PlayOneShot (Explosion, 1f);
+			Destroy (other.gameObject);
+		}
 	}
 
 void Explode(){
