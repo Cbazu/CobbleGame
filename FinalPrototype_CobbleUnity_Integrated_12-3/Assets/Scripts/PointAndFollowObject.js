@@ -9,6 +9,9 @@
 * follow it and point at it the entire time.			*
 ********************************************************/
 
+public class PointAndFollowObject extends MonoBehaviour
+{
+
 //Programmer Variables
 public var target: Transform;
 public var startLocationFromTarget: Vector3;
@@ -51,3 +54,4 @@ lookAtTarget = !lookAtTarget;
 
 }
 
+}

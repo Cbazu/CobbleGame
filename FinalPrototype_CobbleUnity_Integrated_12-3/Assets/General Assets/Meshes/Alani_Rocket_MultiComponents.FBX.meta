@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 68f9fa0b048f5004fa2cd6efc3d113b6
+timeCreated: 1460610709
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Capsule
+    100004: CapsuleDoor
+    100006: DecouplerRing
+    100008: Engine01
+    100010: Engine02
+    100012: Engine03
+    100014: EngineCone002
+    100016: EngineCone003
+    100018: EngineCone01
+    100020: HullPlates
+    100022: InnerStructure
+    100024: Ladder01
+    100026: MainRocketBody
+    100028: Plane001
+    100030: Strut002
+    100032: Strut003
+    100034: Strut01
+    100036: SupportRing
+    400000: //RootNode
+    400002: Capsule
+    400004: CapsuleDoor
+    400006: DecouplerRing
+    400008: Engine01
+    400010: Engine02
+    400012: Engine03
+    400014: EngineCone002
+    400016: EngineCone003
+    400018: EngineCone01
+    400020: HullPlates
+    400022: InnerStructure
+    400024: Ladder01
+    400026: MainRocketBody
+    400028: Plane001
+    400030: Strut002
+    400032: Strut003
+    400034: Strut01
+    400036: SupportRing
+    2300000: Capsule
+    2300002: CapsuleDoor
+    2300004: DecouplerRing
+    2300006: Engine01
+    2300008: Engine02
+    2300010: Engine03
+    2300012: EngineCone002
+    2300014: EngineCone003
+    2300016: EngineCone01
+    2300018: HullPlates
+    2300020: InnerStructure
+    2300022: Ladder01
+    2300024: MainRocketBody
+    2300026: Plane001
+    2300028: Strut002
+    2300030: Strut003
+    2300032: Strut01
+    2300034: SupportRing
+    3300000: Capsule
+    3300002: CapsuleDoor
+    3300004: DecouplerRing
+    3300006: Engine01
+    3300008: Engine02
+    3300010: Engine03
+    3300012: EngineCone002
+    3300014: EngineCone003
+    3300016: EngineCone01
+    3300018: HullPlates
+    3300020: InnerStructure
+    3300022: Ladder01
+    3300024: MainRocketBody
+    3300026: Plane001
+    3300028: Strut002
+    3300030: Strut003
+    3300032: Strut01
+    3300034: SupportRing
+    4300000: MainRocketBody
+    4300002: DecouplerRing
+    4300004: Capsule
+    4300006: CapsuleDoor
+    4300008: Plane001
+    4300010: SupportRing
+    4300012: Strut01
+    4300014: EngineCone01
+    4300016: Ladder01
+    4300018: HullPlates
+    4300020: InnerStructure
+    4300022: Engine01
+    4300024: Strut002
+    4300026: Strut003
+    4300028: EngineCone002
+    4300030: EngineCone003
+    4300032: Engine02
+    4300034: Engine03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
