@@ -28,22 +28,21 @@ public class EnemyAI : MonoBehaviour {
     private float turnTime;
     private Transform heading;
     private GameObject chaseTarget;
+    private Vector3 direction;
+    private float degreesToTurn;
+    private float degreesTurned = 0f;
+    private Vector3 futurePoint;
+    private Quaternion beginTurn;
 
     void Awake()
     {
 
         //variables
         Transform enemyVisionCheck;
-        GameObject newObject;
 
         //Check for enemyVision prefab and if there isn't one create it
         enemyVisionCheck = transform.Find(enemyVision.name);
-        if (enemyVisionCheck != null)
-        {
-            Debug.Log("Found EnemyVision!");
-            Debug.Log("Name that was searched: " + enemyVisionCheck.name);
-        }
-        else
+        if (enemyVisionCheck == null)
         {
             enemyVisionCheck = (Transform) Instantiate(enemyVision, transform.position, Quaternion.identity);
             enemyVisionCheck.transform.parent = transform;
@@ -69,15 +68,44 @@ public class EnemyAI : MonoBehaviour {
         //waits before moving on to the next point
         else if (isWaiting)
         {
+            if(isTurning)
+            {
+                //direction = new Vector3(futurePoint.x, transform.position.y, futurePoint.z) - transform.position;
+                degreesTurned += agent.angularSpeed * Time.deltaTime;
+                /*if((degreesTurned / degreesToTurn) >= 1)
+                {
+                    timeWaited = timeToWait + 1;
+                }*/
+                transform.rotation = Quaternion.Slerp(beginTurn, Quaternion.LookRotation(direction), degreesTurned / degreesToTurn);
+
+            }
             if (timeWaited >= timeToWait)
             {
-                isWaiting = false;
-                timeWaited = 0f;
-                GotoNextPoint();
+                if (isTurning)
+                {
+                    isWaiting = false;
+                    timeWaited = 0f;
+                    isTurning = false;
+                    degreesTurned = 0f;
+                    GotoNextPoint();
+                }
+                else
+                {
+                    isTurning = true;
+                    beginTurn = transform.rotation;
+                    direction = new Vector3(futurePoint.x, transform.position.y, futurePoint.z) - transform.position;
+                    degreesToTurn = Mathf.Abs(Vector3.Angle(direction, transform.forward));
+                    Debug.Log("Destination: " + agent.destination + " CurrentPosition: "+transform.position);
+                    Debug.Log("Time to wait before turn: " + timeToWait);
+                    timeToWait += degreesToTurn / agent.angularSpeed;  //gets number of seconds needed to turn to target and adds it to time waiting
+                    Debug.Log("Degrees to turn: " + degreesToTurn + " Turning time: " + timeToWait);
+                }
+                
             }
             else
             {
                 timeWaited += Time.deltaTime;
+                
             }
         }
 
@@ -97,7 +125,7 @@ public class EnemyAI : MonoBehaviour {
 
         //Wait until it's time to move to the next point
         timeToWait = patrolWayPoints[currentPoint].GetComponent<WaypointInfo>().GetWaitTime();
-        isWaiting = timeToWait != 0;
+        isWaiting = true;
         Debug.Log("wait time is: " + timeToWait);
         Debug.Log("Current waypoint is " + currentPoint);
         //Choose the next point when agent gets close to current one
@@ -118,6 +146,7 @@ public class EnemyAI : MonoBehaviour {
             currentPoint += pointMultiplier;
             Debug.Log("Moving to point " + currentPoint);
         }
+        futurePoint = patrolWayPoints[currentPoint].transform.position;
     }
 
     void AssignNextPoint(Transform chasePlayer)

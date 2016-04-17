@@ -12,31 +12,35 @@ public class EnemyVision : MonoBehaviour {
     //public variables
     public float fieldOfVision = 90f;
     public float visionRadius = 10f;
+    public float detectRadius = 2f;
     public float meshHeight = .4f;
+    public float boxScale = 4f;
 
     //private variables
     private bool playerPresent = false;
     private GameObject playerRef;
+    private BoxCollider boxDimensions;
+   
     
     
     // Use this for initialization
     void Start() {
 
         //variables needed for mesh
-        Vector3[] vertices = new Vector3[8];    //vertices for cone
-        int[] tri = new int[] { 0,1,2,2,1,3,3,7,5,5,1,3,3,7,6,6,2,3,2,6,4,4,0,2,0,1,5,5,4,0,4,5,7,7,6,4};                 //12 triangles = 3 points each
+        Vector3[] vertices = new Vector3[8];   //vertices for cone
+        int[] tri = new int[] { 0,1,2,2,3,0,0,1,5,5,0,4,4,0,3,3,4,7,7,3,2,2,7,6,6,5,2,2,1,5,5,6,4,4,7,6};                 //12 triangles = 3 points each
         float halfAngle = (fieldOfVision * Mathf.Deg2Rad / 2); //convert angle to degrees and 90 degree offset
         float offset = Mathf.PI / 2;
 
         //create vertices
         vertices[0] = new Vector3(0, meshHeight / 2, 0);
-        vertices[1] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset - halfAngle) * visionRadius, meshHeight/2, Mathf.Sin(transform.localEulerAngles.y + offset - halfAngle) * visionRadius);
-        vertices[2] = new Vector3(Mathf.Cos(transform.localEulerAngles.y+ offset + halfAngle) * visionRadius, meshHeight/2, Mathf.Sin(transform.localEulerAngles.y + offset + halfAngle) * visionRadius);
-        vertices[3] = new Vector3(0, meshHeight / 2, visionRadius);
-        vertices[4] = new Vector3(0, -1* meshHeight / 2, 0);
-        vertices[5] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset - halfAngle) * visionRadius, -1 * meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset - halfAngle) * visionRadius);
-        vertices[6] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset + halfAngle) * visionRadius, -1 * meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset + halfAngle) * visionRadius);
-        vertices[7] = new Vector3(0, -1 * meshHeight / 2, visionRadius);
+        vertices[1] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset - halfAngle) * visionRadius, meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset - halfAngle) * visionRadius);
+        vertices[2] = new Vector3(0, meshHeight / 2, visionRadius);
+        vertices[3] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset + halfAngle) * visionRadius, meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset + halfAngle) * visionRadius);
+        vertices[4] = new Vector3(0, -1*meshHeight / 2, 0);
+        vertices[5] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset - halfAngle) * visionRadius, -1*meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset - halfAngle) * visionRadius);
+        vertices[6] = new Vector3(0, -1*meshHeight / 2, visionRadius);
+        vertices[7] = new Vector3(Mathf.Cos(transform.localEulerAngles.y + offset + halfAngle) * visionRadius, -1*meshHeight / 2, Mathf.Sin(transform.localEulerAngles.y + offset + halfAngle) * visionRadius);
 
         //Debug.Log("Vertices:  1: " + vertices[0] + "  2: " + vertices[1] + "  3: " + vertices[2] + "  4: " + vertices[3]);
 
@@ -46,6 +50,8 @@ public class EnemyVision : MonoBehaviour {
         mesh.triangles = tri;
         gameObject.GetComponent<MeshFilter>().mesh = mesh;
         gameObject.GetComponent<MeshCollider>().sharedMesh = mesh;
+        boxDimensions = GetComponent<BoxCollider>();
+        boxDimensions.size = new Vector3(boxScale, meshHeight, boxScale);
 
     }
 	
