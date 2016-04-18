@@ -7461,6 +7461,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e598d5eb001db54418151014f20c13bd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &335717938 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 146114, guid: e598d5eb001db54418151014f20c13bd, type: 2}
+  m_PrefabInternal: {fileID: 335717937}
+--- !u!114 &335717939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335717938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a15ff95fd9568545ac5c35379623e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: MainCamera
 --- !u!1 &346746628 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d659f9b9db3f1124889d9094a16b3b30, type: 3}
@@ -13354,11 +13370,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 433554, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 72.52
+      value: 75.09
       objectReference: {fileID: 0}
     - target: {fileID: 433554, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 37.76
+      value: 40.62
       objectReference: {fileID: 0}
     - target: {fileID: 433554, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13382,7 +13398,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433554, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 198030, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
+      propertyPath: m_Name
+      value: sorting yardTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 198030, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
+      propertyPath: m_TagString
+      value: TeleportTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11417540, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
+      propertyPath: markerName
+      value: sorting yardTest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6823e25e260ac9046b4bebdaa257271b, type: 2}
@@ -17022,7 +17050,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402920, guid: f9522b05abaf4df4391e79d340fd8ea1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 32.4
+      value: 45.4
       objectReference: {fileID: 0}
     - target: {fileID: 402920, guid: f9522b05abaf4df4391e79d340fd8ea1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -17055,6 +17083,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9522b05abaf4df4391e79d340fd8ea1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1015726984 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 149602, guid: f9522b05abaf4df4391e79d340fd8ea1, type: 2}
+  m_PrefabInternal: {fileID: 1015726983}
+--- !u!114 &1015726985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015726984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a15ff95fd9568545ac5c35379623e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: Player
 --- !u!1 &1016009575
 GameObject:
   m_ObjectHideFlags: 0
@@ -20718,7 +20762,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fieldOfVision: 80
   visionRadius: 20
+  detectRadius: 2
   meshHeight: 3
+  boxScale: 4
 --- !u!1 &1296222969
 GameObject:
   m_ObjectHideFlags: 0
@@ -29244,6 +29290,10 @@ MonoBehaviour:
   loadingUI: {fileID: 0}
   loadTextDisplay: {fileID: 0}
   loadBarImage: {fileID: 0}
+  loadBarBG: {fileID: 0}
+  markerYDifferential: 0
+  loadWaitTime: 5
+  promptCanvas: {fileID: 0}
 --- !u!1001 &1884480747
 Prefab:
   m_ObjectHideFlags: 0

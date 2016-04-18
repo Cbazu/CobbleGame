@@ -14,6 +14,7 @@ public class TeleportGate : MonoBehaviour
     public Image loadBarBG;
     public float markerYDifferential;
     public float loadWaitTime = 5f;
+	public GameObject promptCanvas = null;
 
 
     //private variables
@@ -66,7 +67,8 @@ public class TeleportGate : MonoBehaviour
         //Initiates loading screen and loading of the next level. Conditional only fires
         //when player presses the correct key, GUI instructions are displaying, and the next level has not already
         //started loading
-        if (Input.GetKeyDown(KeyCode.T) && isDisplaying && (!testing /*levelLoading == null*/))
+       // if (Input.GetKeyDown(KeyCode.T) && isDisplaying && (!testing /*levelLoading == null*/))
+		if (Input.GetButtonDown("Interact") && isDisplaying && (!testing /*levelLoading == null*/))
         {
             LoadNextLevel();
         }
@@ -153,6 +155,8 @@ public class TeleportGate : MonoBehaviour
         {
             isDisplaying = true;
             playerHolder = other.gameObject;
+			promptCanvas.GetComponent<Canvas> ().enabled = true;
+			promptCanvas.GetComponentInChildren<Text> ().text = "Travel to " + destinationLevel;
         }
     }
 
@@ -162,7 +166,7 @@ public class TeleportGate : MonoBehaviour
         {
             isDisplaying = false;
             playerHolder = null;
-
+			promptCanvas.GetComponent<Canvas> ().enabled = false;
         }
     }
 
@@ -180,13 +184,13 @@ public class TeleportGate : MonoBehaviour
         
     }
 
-    void OnGUI()
-    {
-        if (isDisplaying == true)
-        {
-            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 100, 50), "Press T to travel to " + destinationLevel);
-        }
-    }
+//    void OnGUI()
+//    {
+//        if (isDisplaying == true)
+//        {
+//            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 100, 50), "Press T to travel to " + destinationLevel);
+//        }
+//    }
 
 
     IEnumerator LoadNewScene(float levelWait)
